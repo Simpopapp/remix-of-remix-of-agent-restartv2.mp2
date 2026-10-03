@@ -1,10 +1,5 @@
-runtime - prepare to connect
+opencode como runtime vs projeto real como criação
 
-Mapear e catalogar todas as peças do runtime do agente principal existentes (sem considerar o opencode como runtime), cobrindo todas as peças necessárias pro amplo funcionamento do agente e das tools (previamente catalogadas em tools.md)
-Organizar hierarquicamente as pastas e arquivos, com uma breve explicação sobre a logica de funcionamento individual e mutua de todas as peças e em seguida criar uma pasta de skills de runtime que capacite o agente a entender melhor o funcionamento dele profundadamente seguindo logica similar à da metodologia de tools-skills (presente em /dev-server/.opencode/metodoogia-skills) mas voltada para o runtime. 
-As skills do runtime do agente principal (antes do opencode) devem estar dispostas em /dev-server/runtime-skills
+1- Sempre verificar se o opencode está configurado e funcionando antes de iniciar qualquer projeto (a menos que o usuário pro ativamente e explicitamente peça explicitamente para pular a verificação)
 
-(obs: as tool-skills estão em zip, descompacte-as no mesmo local de forma que a pasta tools-skills fique presente em /dev-server/.opencode/tools-skills)
-(obs2: não use o opencode para realizar essas tarefas)
-
-
+2- Sempre que um projeto novo for ser construido o opencode deve ficar fora do "app", funcionando plenamente como runtime e ainda acessivel via opencode web, porém não mais fazendo parte do preview ou das rotas do projeto em sí, a interface inicial mostrando ele é apenas para facilitar a verificação do status de atividade dele (como agente online) efuncionar como uma "blank page" antes da construção do novo projeto iniciar
